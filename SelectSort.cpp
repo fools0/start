@@ -6,7 +6,7 @@ void swap(int &a,int &b)
 	a=b;
 	b=t;
 }
-void SelectSort(int a[],int n) //Ñ¡ÔñÅÅĞò
+void SelectSort(int a[],int n) //é€‰æ‹©æ’åº
 {
     int left = 0;
     int right = n - 1;
@@ -21,7 +21,7 @@ void SelectSort(int a[],int n) //Ñ¡ÔñÅÅĞò
             if (a[i] > a[max])
                 max = i;
         }
-        // ¿¼ÂÇĞŞÕıµÄÇé¿ö£¬×î´óÖµÔÚ×îĞ¡Î»ÖÃ£¬×îĞ¡ÖµÔÚ×î´óÎ»ÖÃ
+        // è€ƒè™‘ä¿®æ­£çš„æƒ…å†µï¼Œæœ€å¤§å€¼åœ¨æœ€å°ä½ç½®ï¼Œæœ€å°å€¼åœ¨æœ€å¤§ä½ç½®
         swap(a[max], a[right]);
         if (min == right)
             min = max;
@@ -33,7 +33,7 @@ void SelectSort(int a[],int n) //Ñ¡ÔñÅÅĞò
 int main()
 {
 	int a[10] = {43, 65, 4, 23, 6, 98, 2, 65, 7, 79};
-	printf("Ñ¡ÔñÅÅĞò£º\n");
+	printf("é€‰æ‹©æ’åºï¼š\n");
 	SelectSort(a,10);
 	for(int i=0;i<10;i++)
 		printf(" %d ",a[i]);

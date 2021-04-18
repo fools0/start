@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main()
+{
+	long long  n;
+	int a=0,b=0,c=0,d=0;
+	scanf("%lld",&n);
+	while(n)
+	{
+		d++;
+		if(d==1000)
+		{
+			c++;
+			d=0;
+		}
+		if(c==60)
+		{
+			b++;
+			d=0;
+			c=0;
+			d=0;
+		}
+		if(b==60)
+		{
+			a++;
+			b=0;
+			c=0;
+			d=0;
+		}
+		if(a==24)
+		{
+			a=0;
+			b=0;
+			c=0;
+			d=0;	
+		}
+		n--; 
+	}
+	printf("%02d:%02d:%02d",a,b,c);
+ } 
